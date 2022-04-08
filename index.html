@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea id="passwordBox" rows="4" placeholder="Your Secure Password"></textarea>
+          <p>please select at least 1 character type</p>
+            <div class="row text-center">
+                <div class="col-sm-3 specialChars">
+                    <input id="specialcheckbox" type="checkbox" name="specialChars"> !@#$%
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="numbers"> 0-9
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="lwrChars"> a-z 
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="upprChars"> A-Z 
+                </div>
+                
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="passGenButn" onclick="createPassword()">Generate Password</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="clipboardButn" onclick="copyToClipboard()">Copy to Clipboard</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
